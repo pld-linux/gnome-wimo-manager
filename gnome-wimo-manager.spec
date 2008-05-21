@@ -13,8 +13,10 @@ BuildRequires:	mono-csharp
 BuildRequires:	nant
 BuildRequires:	pkgconfig
 BuildRequires:	wimo-rapi
+BuildRequires:	wimo-dbus
+BuildRequires:	rpmbuild(monoautodeps)
+%requires_eq_to	wimo-dbus wimo-dbus
 Requires:	wimo-rapi
-Requires:	wimo-dbus
 Requires:	wimo-dccm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
